@@ -8,6 +8,9 @@ Tested on the raspberry pi 4. Using an Adafruit RGB Matrix HAT + RTC for Raspber
 (https://www.adafruit.com/product/2345)
 
 
+
+----
+
 ## Dependencies:
 
 Follow this installation guide for the RGB Matrix
