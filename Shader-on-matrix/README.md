@@ -1,5 +1,5 @@
 
-Shaders on the matrix - using python
+# Shaders on the matrix - using python
 
 Based on:
 https://github.com/hzeller/rpi-rgb-led-matrix/tree/master/bindings/python
@@ -8,16 +8,9 @@ Tested on the raspberry pi 4. Using an Adafruit RGB Matrix HAT + RTC for Raspber
 (https://www.adafruit.com/product/2345)
 
 
-Download the code from this repo:
-INSERT__link to my shader ex -----------------------
+## Dependencies:
 
-
-
-
-----
-Dependencies:
-
-0. Follow this installation guide for the RGB Matrix
+Follow this installation guide for the RGB Matrix
 
 https://learn.adafruit.com/adafruit-rgb-matrix-bonnet-for-raspberry-pi/driving-matrices
 
@@ -29,7 +22,7 @@ The code in this repo is based on these.
 Now there are two things that must be on your pi for this repo to work.
 
 
-1. Install pi3d + make a local copy of the library
+### 1. Install pi3d + make a local copy of the library
 
 Since this code builds upon the code in the "Shaders on raspberry pi4" repo, 
 you must first follow the install steps for getting the pi3d library on your pi found here:
@@ -39,31 +32,31 @@ Then, to make sure you can use pi3d no matter where you place the matrix code fr
 https://github.com/tipam/pi3d
 
 
-INSERT Image of placement of the pi3d folder ------------
+--------- INSERT Image of placement of the pi3d folder ------------
 
 
-2. Then, install the imaging library called PIL
+### 2. Then, install the imaging library called PIL
 
-In terminal:
+### In terminal:
 
-sudo apt-get update && sudo apt-get install python3-dev python3-pillow -y
-make build-python PYTHON=$(which python3)
-sudo make install-python PYTHON=$(which python3)
+    $ sudo apt-get update && sudo apt-get install python3-dev python3-pillow -y
+    $ make build-python PYTHON=$(which python3)
+    $ sudo make install-python PYTHON=$(which python3)
 
 
 ----
 
-How to
+## How to
 
 You can test the code in Thonny by pressing Run, but to take advantage of the settings for the matrix, the code must be run from terminal. So cd to the folder of this repo and then run the sudo command below.
 
 
 
-In terminal:
+### In terminal:
 
-cd /home/pi/Desktop/Shader-on-matrix
+    $ cd /home/pi/Desktop/Shader-on-matrix
 
-sudo python3 ./shader-on-matrix-simple.py --led-gpio-mapping=adafruit-hat --led-gpio-slowdown=7
+    $ sudo python3 ./shader-on-matrix-simple.py --led-gpio-mapping=adafruit-hat --led-gpio-slowdown=7
 
 
 
@@ -79,5 +72,8 @@ More info here https://learn.adafruit.com/adafruit-rgb-matrix-bonnet-for-raspber
 There are tons more settings and tweaking mentioned in the README here:
 https://github.com/hzeller/rpi-rgb-led-matrix/
 
+
+
 To stop the code from running, in terminal:
-Ctrl + C
+
+    $ Ctrl + C
