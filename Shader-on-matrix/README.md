@@ -56,10 +56,15 @@ You can test the code in Thonny by pressing Run, but to take advantage of the se
 
 
 ### In terminal:
-
-    $ cd /home/pi/Desktop/Shader-on-matrix
-
+To run the simple example:
+    $ cd /home/pi/Desktop/Shader-on-matrix/
+    $ cd Ex_shader-on-matrix_simple
     $ sudo python3 ./shader-on-matrix-simple.py --led-gpio-mapping=adafruit-hat --led-gpio-slowdown=7
+
+To run the All Uniforms example:
+    $ cd /home/pi/Desktop/Shader-on-matrix/
+    $ cd Ex_shader-on-matrix_All-Uniforms/
+    $ sudo python3 ./shader-on-matrix-All-Uniforms.py --led-gpio-mapping=adafruit-hat --led-gpio-slowdown=7
 
 
 
